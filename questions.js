@@ -13,12 +13,12 @@ let questions = [
     {
         numb: 2,
         question: "In Javascript what do we call anything in parenthesis?",
-        answer: "A String",
+        answer: "String",
         options:[
-            "A String",
-            "A Number",
-            "A Boolean",
-            "A Function"
+            "Number",
+            "Boolean",
+            "String",
+            "Styling"
         ]
     },
     {
@@ -35,12 +35,12 @@ let questions = [
     {
         numb: 4,
         question: "What event occurs when the user clicks on an HTML element?",
-        answer: "onclick",
+        answer: "onmouseclick",
         options:[
-            "onclick",
-            "onmouseover",
-            "onvoicecommand",
-            "ontextenter"
+            "onmousehover",
+            "ontextenter",
+            "onmouseclick",
+            "onvoicecommand"
         ]
     },
     {

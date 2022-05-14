@@ -57,12 +57,15 @@ function showQuestions(index){
 function optionSelected(answer){
     let userAns = answer.textContent;
     let correctAns = questions[queCount].answer;
-    if (userAns == correctAns){
+    if(userAns == correctAns ){
         answer.classList.add("correct");
-        console.log("ANSWER IS CORRECT");
+        console.log("answer right")
     }else{
-        console.log("answer is wrong");
+        answer.classList.add("incorrect");
+        console.log("answer wrong")
     }
+    console.log(correctAns)
+    
 }
 
 
