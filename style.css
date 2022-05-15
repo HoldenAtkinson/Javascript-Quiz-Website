@@ -58,7 +58,8 @@ body {
 }
 
 .info-box.activateInfo,
-.quiz-box.activateQuiz {
+.quiz-box.activateQuiz,
+.result-box.activateResults {
     opacity: 1;
     pointer-events:auto;
     z-index: 5;
@@ -202,6 +203,10 @@ body {
     border-color: #c3e6cb;
 }
 
+.option-list .option.disabled{
+    pointer-events: none;
+}
+
 
 .quiz-box footer{
     display: flex;
@@ -270,12 +275,14 @@ section .option-list .option:hover{
 }
 
 .result-box{
-    display: none;
+    
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     background: rgb(59, 75, 129);
-  
+    opacity: 0;
+    pointer-events:none;
+    transform: translate(-50%, -50%) scale(0.9);
     width: 500px;
     padding: 8px;
     border-radius: 5px;
